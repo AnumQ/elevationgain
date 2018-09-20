@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE11E23E2153D8730009832F /* ElevationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE11E23D2153D8730009832F /* ElevationViewController.swift */; };
+		BE11E2402153DFE50009832F /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE11E23F2153DFE50009832F /* CustomButton.swift */; };
+		BE11E2422153E3430009832F /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE11E2412153E3430009832F /* Calculator.swift */; };
 		BE2DA4222153D0DE00E29400 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2DA4212153D0DE00E29400 /* AppDelegate.swift */; };
-		BE2DA4242153D0DE00E29400 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2DA4232153D0DE00E29400 /* ViewController.swift */; };
+		BE2DA4242153D0DE00E29400 /* InclineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2DA4232153D0DE00E29400 /* InclineViewController.swift */; };
 		BE2DA4272153D0DE00E29400 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE2DA4252153D0DE00E29400 /* Main.storyboard */; };
 		BE2DA4292153D0E200E29400 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE2DA4282153D0E200E29400 /* Assets.xcassets */; };
 		BE2DA42C2153D0E200E29400 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE2DA42A2153D0E200E29400 /* LaunchScreen.storyboard */; };
 		BE2DA4372153D0E300E29400 /* ElevationCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2DA4362153D0E300E29400 /* ElevationCalculatorTests.swift */; };
 		BE2DA4422153D0E300E29400 /* ElevationCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2DA4412153D0E300E29400 /* ElevationCalculatorUITests.swift */; };
+		BE2DA4502153D6B800E29400 /* DistanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2DA44F2153D6B800E29400 /* DistanceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BE2DA41E2153D0DE00E29400 /* ElevationCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElevationCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE11E23D2153D8730009832F /* ElevationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevationViewController.swift; sourceTree = "<group>"; };
+		BE11E23F2153DFE50009832F /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		BE11E2412153E3430009832F /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		BE2DA41E2153D0DE00E29400 /* Elevation Gain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Elevation Gain.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE2DA4212153D0DE00E29400 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BE2DA4232153D0DE00E29400 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BE2DA4232153D0DE00E29400 /* InclineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InclineViewController.swift; sourceTree = "<group>"; };
 		BE2DA4262153D0DE00E29400 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE2DA4282153D0E200E29400 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE2DA42B2153D0E200E29400 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +54,7 @@
 		BE2DA43D2153D0E300E29400 /* ElevationCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElevationCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE2DA4412153D0E300E29400 /* ElevationCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevationCalculatorUITests.swift; sourceTree = "<group>"; };
 		BE2DA4432153D0E300E29400 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE2DA44F2153D6B800E29400 /* DistanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +95,7 @@
 		BE2DA41F2153D0DE00E29400 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BE2DA41E2153D0DE00E29400 /* ElevationCalculator.app */,
+				BE2DA41E2153D0DE00E29400 /* Elevation Gain.app */,
 				BE2DA4322153D0E300E29400 /* ElevationCalculatorTests.xctest */,
 				BE2DA43D2153D0E300E29400 /* ElevationCalculatorUITests.xctest */,
 			);
@@ -98,11 +106,15 @@
 			isa = PBXGroup;
 			children = (
 				BE2DA4212153D0DE00E29400 /* AppDelegate.swift */,
-				BE2DA4232153D0DE00E29400 /* ViewController.swift */,
+				BE2DA4232153D0DE00E29400 /* InclineViewController.swift */,
 				BE2DA4252153D0DE00E29400 /* Main.storyboard */,
 				BE2DA4282153D0E200E29400 /* Assets.xcassets */,
 				BE2DA42A2153D0E200E29400 /* LaunchScreen.storyboard */,
 				BE2DA42D2153D0E300E29400 /* Info.plist */,
+				BE2DA44F2153D6B800E29400 /* DistanceViewController.swift */,
+				BE11E23D2153D8730009832F /* ElevationViewController.swift */,
+				BE11E23F2153DFE50009832F /* CustomButton.swift */,
+				BE11E2412153E3430009832F /* Calculator.swift */,
 			);
 			path = ElevationCalculator;
 			sourceTree = "<group>";
@@ -142,7 +154,7 @@
 			);
 			name = ElevationCalculator;
 			productName = ElevationCalculator;
-			productReference = BE2DA41E2153D0DE00E29400 /* ElevationCalculator.app */;
+			productReference = BE2DA41E2153D0DE00E29400 /* Elevation Gain.app */;
 			productType = "com.apple.product-type.application";
 		};
 		BE2DA4312153D0E300E29400 /* ElevationCalculatorTests */ = {
@@ -256,8 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE2DA4242153D0DE00E29400 /* ViewController.swift in Sources */,
+				BE2DA4242153D0DE00E29400 /* InclineViewController.swift in Sources */,
 				BE2DA4222153D0DE00E29400 /* AppDelegate.swift in Sources */,
+				BE11E23E2153D8730009832F /* ElevationViewController.swift in Sources */,
+				BE2DA4502153D6B800E29400 /* DistanceViewController.swift in Sources */,
+				BE11E2402153DFE50009832F /* CustomButton.swift in Sources */,
+				BE11E2422153E3430009832F /* Calculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +382,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "Elevation Gain";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -419,6 +436,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "Elevation Gain";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -430,14 +448,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ElevationCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = anum.qudsia.ElevationCalculator;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = anum.qudsia.ElevationGainCalculator;
+				PRODUCT_NAME = "Elevation Gain";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -447,14 +467,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 56GVCPM9J4;
 				INFOPLIST_FILE = ElevationCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = anum.qudsia.ElevationCalculator;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = anum.qudsia.ElevationGainCalculator;
+				PRODUCT_NAME = "Elevation Gain";
+				PROVISIONING_PROFILE = "c7d5dd46-3ab6-4053-bdf6-c606493445ea";
+				PROVISIONING_PROFILE_SPECIFIER = "ElevationGain Prod App Store";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

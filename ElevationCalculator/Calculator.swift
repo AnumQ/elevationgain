@@ -25,7 +25,7 @@ class Calculator {
     }
     
     func calculate() {
-        let miles  = incline * 0.621371192
+        let miles  = distance * 0.621371192
         let elevationGain = (incline/100)*miles
         let feet = elevationGain*5280
         let meters = feet / 3.281

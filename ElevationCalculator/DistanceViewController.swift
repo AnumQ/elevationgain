@@ -29,15 +29,22 @@ class DistanceViewController: UIViewController, UITextFieldDelegate {
     @IBAction func onNextClick(_ sender: UIButton) {
         
         if distanceField.text != nil && distanceField.text!.count > 0 {
-            Calculator.shared.distance = Double(distanceField.text!)
-            Calculator.shared.calculate()
-            self.performSegue(withIdentifier: "GoToElevationViewController", sender: self)
-            
+            if let num = NumberFormatter().number(from: distanceField.text!) {
+                Calculator.shared.distance = Double(truncating: num)
+                Calculator.shared.calculate()
+                self.performSegue(withIdentifier: "GoToElevationViewController", sender: self)
+            } else {
+                showError()
+            }
         } else {
-            let alert = UIAlertController(title: "Error", message: "Please enter the incline", preferredStyle: UIAlertControllerStyle.alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-            self.present(alert, animated: true)
+            showError()
         }
+    }
+    
+    func showError() {
+        let alert = UIAlertController(title: "Error", message: "Please enter the distance", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: true)
     }
     
 }

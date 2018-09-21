@@ -13,12 +13,18 @@ class ElevationViewController: UIViewController {
     
     @IBOutlet weak var feetValue: UILabel!
     @IBOutlet weak var metersValue: UILabel!
+    @IBOutlet weak var inclineValue: UILabel!
+    @IBOutlet weak var distanceValue: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         feetValue.text = String(Calculator.shared.feet)
         metersValue.text = String(Calculator.shared.meters)
+        
+        inclineValue.text = String(Calculator.shared.incline)
+        
+        distanceValue.text = String(Calculator.shared.distance)
         
     }
 }

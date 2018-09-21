@@ -27,15 +27,22 @@ class InclineViewController: UIViewController, UITextFieldDelegate {
     @IBAction func onNextClick(_ sender: UIButton) {
         
         if inclineField.text != nil && inclineField.text!.count > 0 {
-            Calculator.shared.incline = Double(inclineField.text!)
-            self.performSegue(withIdentifier: "GoToDistanceViewController", sender: self)
+            if let num = NumberFormatter().number(from: inclineField.text!) {
+                Calculator.shared.incline = Double(truncating: num)
+                self.performSegue(withIdentifier: "GoToDistanceViewController", sender: self)
+            } else {
+                showError()
+            }
         } else {
-
-            let alert = UIAlertController(title: "Error", message: "Please enter the incline", preferredStyle: UIAlertControllerStyle.alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-            self.present(alert, animated: true)
+            showError()
         }
 
+    }
+    
+    func showError() {
+        let alert = UIAlertController(title: "Error", message: "Please enter the incline", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: true)
     }
 
 }

@@ -32,8 +32,6 @@ class Calculator {
         
         self.feet = Double(round(100*feet)/100)
         self.meters = Double(round(100*meters)/100)
-        
-        
     }
     
 }

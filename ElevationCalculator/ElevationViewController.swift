@@ -21,9 +21,7 @@ class ElevationViewController: UIViewController {
         
         feetValue.text = String(Calculator.shared.feet)
         metersValue.text = String(Calculator.shared.meters)
-        
         inclineValue.text = String(Calculator.shared.incline)
-        
         distanceValue.text = String(Calculator.shared.distance)
         
     }

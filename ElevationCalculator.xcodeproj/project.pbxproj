@@ -106,11 +106,11 @@
 			isa = PBXGroup;
 			children = (
 				BE2DA4212153D0DE00E29400 /* AppDelegate.swift */,
-				BE2DA4232153D0DE00E29400 /* InclineViewController.swift */,
 				BE2DA4252153D0DE00E29400 /* Main.storyboard */,
 				BE2DA4282153D0E200E29400 /* Assets.xcassets */,
 				BE2DA42A2153D0E200E29400 /* LaunchScreen.storyboard */,
 				BE2DA42D2153D0E300E29400 /* Info.plist */,
+				BE2DA4232153D0DE00E29400 /* InclineViewController.swift */,
 				BE2DA44F2153D6B800E29400 /* DistanceViewController.swift */,
 				BE11E23D2153D8730009832F /* ElevationViewController.swift */,
 				BE11E23F2153DFE50009832F /* CustomButton.swift */,
@@ -449,16 +449,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 56GVCPM9J4;
 				INFOPLIST_FILE = ElevationCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = anum.qudsia.ElevationGainCalculator;
+				PRODUCT_BUNDLE_IDENTIFIER = anum.qudsia.ElevationGain;
 				PRODUCT_NAME = "Elevation Gain";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "fc241299-605f-4380-ba20-748ce75697d2";
+				PROVISIONING_PROFILE_SPECIFIER = "Elevation Gain Development";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -468,18 +469,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 56GVCPM9J4;
 				INFOPLIST_FILE = ElevationCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = anum.qudsia.ElevationGainCalculator;
+				PRODUCT_BUNDLE_IDENTIFIER = anum.qudsia.ElevationGain;
 				PRODUCT_NAME = "Elevation Gain";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "3a5d7bab-b528-440a-8b3a-997035301cdf";
+				PROVISIONING_PROFILE_SPECIFIER = "Elevation Gain Production";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
